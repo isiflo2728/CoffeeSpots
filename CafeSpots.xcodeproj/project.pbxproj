@@ -50,6 +50,21 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		2FD5D88C2F85F580007EB183 /* ViewModels */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2FD5D8912F85F7B0007EB183 /* Models  */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Models ";
+			sourceTree = "<group>";
+		};
+		2FD5D8942F85FB21007EB183 /* Service */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Service;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +95,9 @@
 		2FD5D84E2F85E5E2007EB183 = {
 			isa = PBXGroup;
 			children = (
+				2FD5D8942F85FB21007EB183 /* Service */,
+				2FD5D8912F85F7B0007EB183 /* Models  */,
+				2FD5D88C2F85F580007EB183 /* ViewModels */,
 				2FD5D8822F85F07B007EB183 /* UI */,
 				2FD5D8592F85E5E3007EB183 /* CafeSpots */,
 				2FD5D8672F85E5E4007EB183 /* CafeSpotsTests */,
@@ -105,6 +123,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FD5D8782F85E5E4007EB183 /* Build configuration list for PBXNativeTarget "CafeSpots" */;
 			buildPhases = (
+				2FD5D88B2F85F373007EB183 /* ShellScript */,
 				2FD5D8532F85E5E2007EB183 /* Sources */,
 				2FD5D8542F85E5E2007EB183 /* Frameworks */,
 				2FD5D8552F85E5E2007EB183 /* Resources */,
@@ -116,6 +135,9 @@
 			fileSystemSynchronizedGroups = (
 				2FD5D8592F85E5E3007EB183 /* CafeSpots */,
 				2FD5D8822F85F07B007EB183 /* UI */,
+				2FD5D88C2F85F580007EB183 /* ViewModels */,
+				2FD5D8912F85F7B0007EB183 /* Models  */,
+				2FD5D8942F85FB21007EB183 /* Service */,
 			);
 			name = CafeSpots;
 			packageProductDependencies = (
@@ -237,6 +259,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FD5D88B2F85F373007EB183 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2FD5D8532F85E5E2007EB183 /* Sources */ = {
@@ -402,11 +444,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CafeSpots/CafeSpots.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 38C5XXGVU6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "\"Take a photo of your coffee spot\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -434,11 +479,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CafeSpots/CafeSpots.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 38C5XXGVU6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "\"Take a photo of your coffee spot\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

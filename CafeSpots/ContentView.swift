@@ -8,11 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var viewModel = HomeViewModel()
+
     var body: some View {
-        NavigationStack {
-            Text("Hello world and welcome to Cafe Spots!")
+        TabView {
+            HomeView(viewModel: viewModel)
+                .tabItem {
+                    Label("Home", systemImage: "house.fill")
+                }
+
+            LogView(homeViewModel: viewModel)
+                .tabItem {
+                    Label("Log", systemImage: "note.text.badge.plus")
+                }
+
+            MapView()
+                .tabItem {
+                    Label("Map", systemImage: "map")
+                }
+
+            StatsView()
+                .tabItem {
+                    Label("Stats", systemImage: "chart.bar")
+                }
         }
-        
     }
 }
 
