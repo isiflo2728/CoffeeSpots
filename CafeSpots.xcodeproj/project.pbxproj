@@ -45,6 +45,11 @@
 			path = CafeSpotsUITests;
 			sourceTree = "<group>";
 		};
+		2FD5D8822F85F07B007EB183 /* UI */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = UI;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +80,7 @@
 		2FD5D84E2F85E5E2007EB183 = {
 			isa = PBXGroup;
 			children = (
+				2FD5D8822F85F07B007EB183 /* UI */,
 				2FD5D8592F85E5E3007EB183 /* CafeSpots */,
 				2FD5D8672F85E5E4007EB183 /* CafeSpotsTests */,
 				2FD5D8712F85E5E4007EB183 /* CafeSpotsUITests */,
@@ -109,6 +115,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				2FD5D8592F85E5E3007EB183 /* CafeSpots */,
+				2FD5D8822F85F07B007EB183 /* UI */,
 			);
 			name = CafeSpots;
 			packageProductDependencies = (
