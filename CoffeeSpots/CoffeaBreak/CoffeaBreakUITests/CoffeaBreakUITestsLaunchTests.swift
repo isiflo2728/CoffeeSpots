@@ -1,13 +1,13 @@
 //
-//  NavigationTechnoqueUITestsLaunchTests.swift
-//  NavigationTechnoqueUITests
+//  CoffeaBreakUITestsLaunchTests.swift
+//  CoffeaBreakUITests
 //
-//  Created by Isidoro Flores on 4/29/26.
+//  Created by Isidoro Flores on 4/30/26.
 //
 
 import XCTest
 
-final class NavigationTechnoqueUITestsLaunchTests: XCTestCase {
+final class CoffeaBreakUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

@@ -1,6 +1,6 @@
 //
-//  NavigationTechnoqueApp.swift
-//  NavigationTechnoque
+//  NavTechniqueApp.swift
+//  NavTechnique
 //
 //  Created by Isidoro Flores on 4/29/26.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct NavigationTechnoqueApp: App {
+struct NavTechniqueApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

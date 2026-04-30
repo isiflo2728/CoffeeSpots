@@ -1,13 +1,13 @@
 //
-//  NavigationTechnoqueUITests.swift
-//  NavigationTechnoqueUITests
+//  CoffeaBreakUITests.swift
+//  CoffeaBreakUITests
 //
-//  Created by Isidoro Flores on 4/29/26.
+//  Created by Isidoro Flores on 4/30/26.
 //
 
 import XCTest
 
-final class NavigationTechnoqueUITests: XCTestCase {
+final class CoffeaBreakUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
