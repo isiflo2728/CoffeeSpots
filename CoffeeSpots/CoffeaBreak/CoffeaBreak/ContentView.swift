@@ -7,15 +7,37 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
+    @State private var viewModel = HomeViewModel()
+    @State private var path = [Int]()
+    
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        
+        NavigationStack {
+            TabView {
+                HomeView(viewModel: viewModel)
+                    .tabItem {
+                        Label("Home", systemImage: "house.fill")
+                    }
+                MapView()
+                    .tabItem {
+                        Label("Map", systemImage: "map")
+                    }
+                
+                StatsView()
+                    .tabItem {
+                        Label("Stats", systemImage: "chart.bar")
+                    }
+                ProfileView()
+                    .tabItem {
+                        Label("Profilem", systemImage: "person.crop.circle")
+                    }
+            }
+            
         }
-        .padding()
+    
     }
 }
 
