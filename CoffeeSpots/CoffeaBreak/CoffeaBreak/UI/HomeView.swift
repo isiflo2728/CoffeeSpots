@@ -14,14 +14,14 @@ struct HomeView: View {
     @State private var isProfile = false
     var body: some View {
         NavigationStack {
-            ScrollView {
-                LazyVStack(spacing: 16) {
-                    ForEach(viewModel.spots) { spot in
-                        CafeCard(spot: spot)
-                    }
+            List {
+                ForEach(viewModel.spots) { spot in
+                    CafeCard(spot: spot)
+                        .listRowInsets(EdgeInsets())
+                        .listRowSeparator(.hidden)
                 }
-                .padding(.top, 8)
             }
+            .listStyle(.plain)
             .navigationTitle("CafeSpots")
             .task {
                 await viewModel.fetchSpots()
@@ -35,15 +35,16 @@ struct HomeView: View {
                     )
                 }
             }
-            .toolbar{
-                ToolbarItem{
-                    Button{
-                       isShowing.toggle()
-                    } label : {
+            .toolbar {
+                ToolbarItem {
+                    Button {
+                        isShowing.toggle()
+                    } label: {
                         Label("Add", systemImage: "plus")
                     }
                 }
-            }.sheet(isPresented: $isShowing){
+            }
+            .sheet(isPresented: $isShowing) {
                 LogView(homeViewModel: viewModel)
             }
         }

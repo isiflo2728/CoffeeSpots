@@ -102,4 +102,10 @@ class CloudKitService {
             }
         }
     }
+    
+    func deleteSpot(of request : CafeSpot) async throws {
+        let spotID = CKRecord.ID(recordName: request.id.uuidString)
+        
+        try await database.deleteRecord(withID: spotID)
+    }
 }

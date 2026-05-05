@@ -29,9 +29,22 @@
 		2F8F9ACE2FA3F98100C15CE1 /* CoffeaBreakUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeaBreakUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		2F9F32CC2FAAAA2B00381C81 /* Exceptions for "CoffeaBreak" folder in "CoffeaBreak" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 2F8F9AB62FA3F98000C15CE1 /* CoffeaBreak */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		2F8F9AB92FA3F98000C15CE1 /* CoffeaBreak */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				2F9F32CC2FAAAA2B00381C81 /* Exceptions for "CoffeaBreak" folder in "CoffeaBreak" target */,
+			);
 			path = CoffeaBreak;
 			sourceTree = "<group>";
 		};
@@ -401,9 +414,11 @@
 				DEVELOPMENT_TEAM = 38C5XXGVU6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoffeaBreak/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
-				INFOPLIST_KEY_NSCameraUsageDescription = "take photo of coffee";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Take photos of your favorite coffee spots";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Take photos of your favorite coffee spots";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "wanna upload past photos?";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Upload photos at a later time?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -439,9 +454,11 @@
 				DEVELOPMENT_TEAM = 38C5XXGVU6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoffeaBreak/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
-				INFOPLIST_KEY_NSCameraUsageDescription = "take photo of coffee";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Take photos of your favorite coffee spots";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Take photos of your favorite coffee spots";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "wanna upload past photos?";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Upload photos at a later time?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
