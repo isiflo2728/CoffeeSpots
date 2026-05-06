@@ -39,6 +39,8 @@ final class LogViewModel {
         !name.trimmingCharacters(in: .whitespaces).isEmpty
     }
 
+    var existingSpots: [CafeSpot] { homeViewModel.spots }
+
     // MARK: - Dependencies
 
     private let homeViewModel: HomeViewModel
